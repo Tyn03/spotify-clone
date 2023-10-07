@@ -84,4 +84,28 @@
 .MenuContainer ul li a {
     text-decoration: none;
     color : #848484;
+    display : flex;
+    align-items : center;
+    font-size : 16px;
 }
+.MenuContainer ul li a i {
+    font-size : 18px;
+    margin-right : 15px;
+}
+
+.MenuContainer ul li:hover::before{
+    position : absolute;
+    content : "";
+    top : 0;
+    left : -20;
+    width : 5px;
+    height : 100%;
+    background : #49e12e;
+    border-radius: 5px;
+    transition : 0.3s;
+}
+.MenuContainer ul li:hover a{
+    color : #f1f1f1;
+    transition : 0.3s;
+}
+
