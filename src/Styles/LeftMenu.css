@@ -93,7 +93,8 @@
     margin-right : 15px;
 }
 
-.MenuContainer ul li:hover::before{
+.MenuContainer ul li:hover::before,
+.MenuContainer ul li.active::before{
     position : absolute;
     content : "";
     top : 0;
@@ -104,7 +105,8 @@
     border-radius: 5px;
     transition : 0.3s;
 }
-.MenuContainer ul li:hover a{
+.MenuContainer ul li:hover a,
+.MenuContainer ul li.active a{
     color : #f1f1f1;
     transition : 0.3s;
 }
