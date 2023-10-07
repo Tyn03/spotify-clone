@@ -1,0 +1,87 @@
+.LeftMenu {
+    width : 240px;
+    height : 100%;
+    min-height : 100vh;
+    background : rgba(34, 34, 34, 0.6);
+    backdrop-filter : blur(10px);
+    padding : 25px 30px;
+    overflow : hidden;
+    transition : all 0.3s ease;
+}
+
+.LeftMenu .logoContainer{
+    color : #f1f1f1;
+    display : flex;
+    align-items : center;
+    justify-content :space-between;
+    font-size : 20px;
+}
+
+.LeftMenu .logoContainer i {
+    font-size : 20px;
+}
+
+.searchBox{
+    width :100%;
+    height:45px;
+    position: relative;
+    margin-top : 20px;
+    color : #848484;
+    overflow : hidden;
+    border-radius : 10px;
+    box-shadow : 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+.searchBox input{
+    width : 100%;
+    height : 100%;
+    outline : none;
+    border : none;
+    background : rgba(0,0,0,0.5);
+    padding-left : 45px;
+    color : #f1f1f1;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.searchBox .searchIcon{
+    position : absolute;
+    top : 0;
+    left : 0;
+    color : #848484;
+    width : 45px;
+    height : 45px;
+    background : #555;
+    text-align : center;
+    line-height : 45px;
+    font-size : 20px;
+}
+
+.MenuContainer{
+    margin: 15px 0;
+}
+
+.MenuContainer .title{
+    color : #848484;
+    font-size : 12px;
+    font-weight : bold;
+    margin-bottom : 10px;
+    text-transform : uppercase
+}
+
+.MenuContainer ul{
+    width : 100%;
+    padding : 0;
+}
+.MenuContainer ul li {
+    list-style : none;
+    margin : 5px 0;
+    width : 100%;
+    padding : 5px 0;
+    position : relative;
+}
+
+.MenuContainer ul li a {
+    text-decoration: none;
+    color : #848484;
+}

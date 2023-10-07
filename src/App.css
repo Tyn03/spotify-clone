@@ -1,0 +1,23 @@
+.App {
+  width : 100%;
+  height : 100vh;
+  position : relative;
+  overflow: hidden;
+  display : flex;
+}
+
+.background {
+  position : absolute;
+  top : 0;
+  left : 0;
+  right : 0;      /* left and top is 0 so that it exactly start from this top left corner  */
+  bottom : 0;
+  background: url(./img/background.jpg) no-repeat center;
+  background-size: cover;
+  filter :grayscale(100);
+  z-index : -1;
+}
+
+
+
+
