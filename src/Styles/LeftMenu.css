@@ -1,5 +1,5 @@
 .LeftMenu {
-    width : 240px;
+    width : 300px;
     height : 100%;
     min-height : 100vh;
     background : rgba(34, 34, 34, 0.6);
@@ -111,3 +111,174 @@
     transition : 0.3s;
 }
 
+.playlistContainer {
+    cursor: pointer;
+    margin : 15px 0;
+}
+
+.playlistContainer .nameContainer{
+    display : flex;
+    color : #848484;
+    justify-content : space-between;
+    align-items : center;
+    margin-bottom: 10px;
+}
+
+.playlistContainer .nameContainer p {
+    font-size : 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.playlistContainer .nameContainer i{
+    cursor : pointer;
+    color : #f1f1f1;
+
+}
+
+.playlistContainer .playListScroll{
+    
+    height : 140px;
+    overflow-x: hidden;
+    color : #848484;
+    overflow-y: scroll;
+    position: relative;
+    
+}
+
+
+.playlistContainer .playListScroll .PlayList{
+    display : flex;
+    color : #f1f1f1;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.playlistContainer .playListScroll .PlayList i {
+    font-size: 18px;
+}
+
+.playlistContainer .playListScroll .PlayList .list{
+    margin-right : 12px;
+}
+
+.playlistContainer .playListScroll .PlayList .trash{
+    margin-left: auto;
+}
+
+.playlistContainer .playListScroll .PlayList p{
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display : inline;
+}
+
+.playlistContainer .playListScroll .PlayList:hover{
+    color : #f1f1f1;
+    transition : 0.3s;
+}
+
+.TrackList{
+    border-top : 1px solid rgba(255, 255, 255, 0.1);
+    padding-top : 20px;
+}
+
+.TrackList .top{
+    display : flex;
+    align-items : center;
+}
+
+.TrackList .top img{
+    width : 50px !important;
+}
+
+.TrackList .top p{
+    margin-left: 15px;
+    color : #f1f1f1;
+    font-size: 14px;
+}
+
+.TrackList .top .trackName .trackSpan{
+    display : block;
+    font-size: 12sp;
+    color : #848484;
+}
+
+.TrackList .bottom{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    color : #848484;
+}
+
+.TrackList .bottom i{
+    font-size : 18px;
+}
+
+.TrackList .bottom i:hover{
+    color : #f1f1f1;
+    transition : 0.3s;
+    cursor: pointer;
+}
+
+/* .TrackList .bottom input{
+    position : relative;
+    height : 5px;
+    border : none;
+    outline : none;
+    border-radius : 5px;
+    background : rgba(255, 255, 255, 0.1);
+    appearance: none;
+} */
+
+/* chrome and safari
+.TrackList .bottom input::before{
+    position : absolute;
+    content :'';
+    top : 0;
+    left : 0;
+    background : #49e12e;
+    width : 50%;
+    height : 100%;
+    border-radius : 10px;
+    z-index : 2;
+    transition : width 250ms linear;
+}
+
+.Tracklist .bottom input::-webkit-slider-thumb{
+    -webkit-appearance : none;
+    width : 10px;
+    height : 20px;
+    border-radius : 10px;
+    background : #f1f1f1;
+    border : 2px solid #000;
+    cursor : pointer;
+    position : relative;
+    margin : -2px 0 0 0;
+    z-index : 3;
+    box-sizing : border-box;
+    transition : all 250ms linear;
+}
+
+/*firefox
+.TrackList .bottom input::-moz-progress-bar{
+    
+    background : #49e12e;
+    width : 50%;
+    height : 100%;
+    border-radius : 10px;
+    z-index : 2;
+    transition : width 250ms linear;
+}
+
+.TrackList .bottom input::-moz-range-thumb{
+    
+    background : #49e12e;
+    width : 50%;
+    height : 100%;
+    border-radius : 10px;
+    z-index : 2;
+    transition : width 250ms linear;
+} */

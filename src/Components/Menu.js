@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react';
 
 function Menu({title,menuObject}) {
+    
     useEffect(() => {
         const allLi = document
         .querySelector(".MenuContainer ul")
@@ -17,7 +18,7 @@ function Menu({title,menuObject}) {
         <ul>
             {
                 menuObject && menuObject.map((menu)=>(
-                    <li> <a href="#">
+                    <li key={menu.id}> <a href="#">
                         <i>{menu.icon}</i>
                         <span>{menu.name}</span>
                         </a>
