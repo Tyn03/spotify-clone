@@ -13,7 +13,7 @@ function MenuPlayList() {
         </div>
            <div className="playListScroll">
             {PlayList && PlayList.map((PlayList) => (
-                <div className="PlayList">
+                <div className="PlayList" >
                 <i className="list">
                         <BsMusicNoteList/>
                     </i>
