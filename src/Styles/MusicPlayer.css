@@ -63,6 +63,21 @@
   .musicPlayer .songAttributes .top .middle .forward i {
     margin: 0px 25px;
   }
+
+  .musicPlayer .songAttributes .top .middle .back{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right : 10px;
+  }
+
+
+  .musicPlayer .songAttributes .top .middle .forward{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right : 10px;
+  }
   
   .musicPlayer .songAttributes .top .middle .back i:nth-child(1),
   .musicPlayer .songAttributes .top .middle .forward i:nth-child(1) {

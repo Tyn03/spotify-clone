@@ -5,6 +5,9 @@ import { MusicPlayer } from './MusicPlayer';
 function AudioList() {
     const [song,setSong] = useState(Songs[0].song);
     const [img,setImage] = useState(song[0].imgSrc);
+    const [songIndex, setSongIndex] = useState(0);
+
+    
 
     useEffect(() => {
         const songs = document
@@ -29,6 +32,8 @@ function AudioList() {
         setImage(imgSrc);
     }
 
+    
+
   return (
     <div className="audioList">
         <h2 className="title">
@@ -39,7 +44,9 @@ function AudioList() {
             {
                 Songs && Songs.map((song,index)=>(
                     <div className="songs" key={song.id}
-                        onClick = {() => setMainSong(song?.song,song?.imgSrc)}
+                        onClick = {() => {setMainSong(song?.song,song?.imgSrc);
+                            setSongIndex(index); // Cập nhật index của bài hát
+                        }}
                     >
                     <div className="count">{`#${index + 1}`}</div>
                     <div className="song">
@@ -84,7 +91,7 @@ function AudioList() {
         
         </div>
 
-        <MusicPlayer song = {song} imgSrc = {img}/>
+        <MusicPlayer song = {song} imgSrc = {img} songIndex={songIndex} />
     </div>
   )
 }
