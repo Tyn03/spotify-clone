@@ -17,7 +17,7 @@
     width : 100%;
     height : 100%;
     object-fit : cover;
-    filter : grayscale(100);
+    
 }
 
 
@@ -215,7 +215,7 @@
 .songs{
     font-size : 14px;
     display : flex;
-    color : red;
+    color : gray;
     align-items: center;
     font-weight : 600;
     width : 100%;

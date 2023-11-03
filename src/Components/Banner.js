@@ -1,11 +1,11 @@
 import React from 'react'
-import Artist from '../img/artist.jpg';
+import anime from '../img/anime.jpg';
 import Check from '../img/check.png';
 import {FaEllipsisH,FaHeadphones,FaCheck} from 'react-icons/fa';
 function Banner() {
   return (
     <div className="Banner">
-      <img src = {Artist} alt="" className="BannerImg"/>
+      <img src = {anime} alt="" className="BannerImg"/>
 
       <div className="content">
         <div className = "breadCrump">
